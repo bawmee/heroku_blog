@@ -1,0 +1,14 @@
+{% load staticfiles %}
+
+포오토오<br>
+
+
+{% for a in photos.all %}
+    <img src="{{a.image.url}}" width="500" height="300" alt="롸">
+    {{a.des}}
+    <br>
+
+{% endfor %}
+<img src="{%static 'hand.jpg'%}" width="500" height="300" alt="롸">
+
+
